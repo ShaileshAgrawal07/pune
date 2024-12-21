@@ -16,6 +16,8 @@ function AddMed() {
   const [MED, setMED] = useState();
   const [MedName, setMedName] = useState();
   const [MedDes, setMedDes] = useState();
+  const [ManufactureDate, setManufactureDate] = useState();
+  const [ExpiryDate, setExpiryDate] = useState();
   const [MedStage, setMedStage] = useState();
 
   const loadWeb3 = async () => {
@@ -76,17 +78,23 @@ function AddMed() {
   const handlerChangeDesMED = (event) => {
     setMedDes(event.target.value);
   };
+  const handlerChangeManufactureDate = (event) => {
+    setManufactureDate(event.target.value);
+  };
+  const handlerChangeExpiryDate = (event) => {
+    setExpiryDate(event.target.value);
+  };
   const handlerSubmitMED = async (event) => {
     event.preventDefault();
     try {
       var reciept = await SupplyChain.methods
-        .addMedicine(MedName, MedDes)
+        .addMedicine(MedName, MedDes, ManufactureDate, ExpiryDate)
         .send({ from: currentaccount });
       if (reciept) {
         loadBlockchaindata();
       }
     } catch (err) {
-      alert("An error occured!!!");
+      alert("An error occurred!!!");
     }
   };
   return (
@@ -118,6 +126,20 @@ function AddMed() {
           placeholder="Medicine Description"
           required
         />
+        <input
+          className="form-control-sm"
+          type="date"
+          onChange={handlerChangeManufactureDate}
+          placeholder="Manufacture Date"
+          required
+        />
+        <input
+          className="form-control-sm"
+          type="date"
+          onChange={handlerChangeExpiryDate}
+          placeholder="Expiry Date"
+          required
+        />
         <button
           className="btn btn-primary btn-sm"
           onSubmit={handlerSubmitMED}
@@ -133,6 +155,8 @@ function AddMed() {
             <th scope="col">ID</th>
             <th scope="col">Name</th>
             <th scope="col">Description</th>
+            <th scope="col">Manufacture Date</th>
+            <th scope="col">Expiry Date</th>
             <th scope="col">Current Stage</th>
           </tr>
         </thead>
@@ -143,6 +167,8 @@ function AddMed() {
                 <td>{MED[key].id}</td>
                 <td>{MED[key].name}</td>
                 <td>{MED[key].description}</td>
+                <td>{MED[key].manufactureDate}</td>
+                <td>{MED[key].expiryDate}</td>
                 <td>{MedStage[key]}</td>
               </tr>
             );
