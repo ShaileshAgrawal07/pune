@@ -41,7 +41,7 @@ This website is a comprehensive platform developed to ensure the transparency, s
   - [Metamask Snap Box](https://archive.trufflesuite.com/boxes/metamask-snap-box/)
 
 ### Steps
-1. Clone the project:
+1. Clone the project.
 2. Navigate to the project directory.
 3. Install dependencies:
    ```bash
@@ -96,7 +96,6 @@ This website is a comprehensive platform developed to ensure the transparency, s
 9. Contributing
 - **Submit Issues**: Please open an issue via the GitHub repository.
 - **Propose Changes**: Submit pull requests for review.
-- **Code of Conduct**: Follow the project’s code of conduct, which is available in the repository.
 
 10. License
 Distributed under the MIT License.
