@@ -1,0 +1,43 @@
+/* Login Page Styles */
+.login-page {
+    max-width: 400px; /* Max width of the login form */
+    margin: 50px auto; /* Center the form */
+    padding: 20px; /* Padding for form */
+    border: 1px solid #ccc; /* Border around form */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.login-page h2 {
+    text-align: center; /* Center the heading */
+}
+
+.login-page form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.login-page label {
+    margin-bottom: 5px; /* Margin below labels */
+}
+
+.login-page input {
+    margin-bottom: 15px; /* Margin below inputs */
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.login-page button {
+    background-color: #3498db; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.login-page button:hover {
+    background-color: #2980b9; /* Darker background on hover */
+}

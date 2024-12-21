@@ -1,0 +1,35 @@
+
+/*  chat bot css */
+
+.chatbot-embed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .chatbot-button {
+    background-color: #5BC0BE; /* Background color */
+    color: #0B132B; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    border: none; /* No border */
+    border-radius: 50%; /* Circular shape */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    display: flex; /* Flexbox for centering icon */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 0rem; /* Font size for the icon */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .chatbot-button:hover {
+      background-color: #6FFFE9; /* Lighter teal on hover */
+      transform: scale(1.1);
+  }
+  
+  
