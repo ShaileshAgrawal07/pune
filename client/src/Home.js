@@ -25,7 +25,7 @@ function Home() {
       const script = document.createElement('script');
       script.src = "https://www.chatbase.co/embed.min.js";
       script.async = true;
-      script.setAttribute("chatbotId", "lfelQ4n09OHewibCFs-YD");
+      script.setAttribute("chatbotId", "3NPc2gqG0LJD2Tm47lQ7J");
       script.setAttribute("domain", "www.chatbase.co");
   
       document.body.appendChild(script);
